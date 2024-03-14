@@ -29,3 +29,4 @@ D:\BTH_PTPMQL\DemoMVC\obj\Debug\net8.0\refint\DemoMVC.dll
 D:\BTH_PTPMQL\DemoMVC\obj\Debug\net8.0\DemoMVC.pdb
 D:\BTH_PTPMQL\DemoMVC\obj\Debug\net8.0\DemoMVC.genruntimeconfig.cache
 D:\BTH_PTPMQL\DemoMVC\obj\Debug\net8.0\ref\DemoMVC.dll
+D:\BTH_PTPMQL\DemoMVC\obj\Debug\net8.0\DemoMVC.csproj.AssemblyReference.cache
