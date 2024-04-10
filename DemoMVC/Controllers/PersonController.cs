@@ -1,20 +1,20 @@
+using DemoMVC.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
 namespace DemoMVC.Controllers
 {
     public class PersonController : Controller
-    { 
-        // GET: /Person/
+    {
         public IActionResult Index()
         {
-            
+          return View();  
+        }
+        [HttpPost]
+        public IActionResult Index(Person ps )
+        {
+            string strResult = "Hello"+ ps.Personid+"-"+ps.FullName+"-"+ps.Address;
+            ViewBag.thongbao = strResult;
             return View();
         }
-
-        // GET: /Person/Welcome/ 
-        public string Welcome()
-        {
-            return "Hello ...";
-        }
+        
     }
 }
