@@ -1,17 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
+
 namespace MvcMovie.Controllers
 {
     public class PersonController : Controller
     {
-        public string Index()
+         public IActionResult Index()
         {
-            return "Hello";
+            return View();
         }
-        public string Welcome()
+        public IActionResult Index(Person ps )
         {
-            return "This is ....";
-
+        string strResult = "Hello"+ ps.PersonID+"-"+ps.FullName+"-"+ps.Address;
+            ViewBag.thongbao = strResult;
+            return View();
         }
     }
 }
